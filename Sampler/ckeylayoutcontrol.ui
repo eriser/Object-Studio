@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CKeyLayoutControl</class>
+ <widget class="QFrame" name="CKeyLayoutControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>676</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="CKeyRangesControl" name="KeyLayout" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>146</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="title">
+      <string>Range</string>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>631</width>
+        <height>334</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="LoopCyclesSpin">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="label_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>X-Fade Cycles</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>MIDI Note</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="DeleteButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Delete Range</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QSpinBox" name="TuneSpin">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Volume</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="OpenButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="label_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Loop Type</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QComboBox" name="LoopTypeCombo"/>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLabel" name="label_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>High Key (X-Fade)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="5">
+        <widget class="CWaveEditWidget" name="WaveEditWidget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>140</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QPushButton" name="FixRangeButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Fix Range</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QPushButton" name="AutoLoopButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Auto Loop</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="CMIDINoteEdit" name="MIDINoteEdit" native="true"/>
+       </item>
+       <item row="6" column="2">
+        <widget class="QPushButton" name="TuneLoopButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Tune Loop</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QSpinBox" name="PitchDetectSpin">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>1000</number>
+         </property>
+         <property name="value">
+          <number>440</number>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QPushButton" name="PitchDetectButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Pitch Detect</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QLineEdit" name="FilenameEdit">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="label_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Low Key (X-Fade)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QSpinBox" name="XFadeCyclesSpin"/>
+       </item>
+       <item row="4" column="4">
+        <widget class="QPushButton" name="LoopTestButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Loop Test</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="4">
+        <widget class="QPushButton" name="TuneTestButton">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Tune Test</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="VolSpin">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>High Key (Full Vel)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Tune</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Low Key (Full Vel)</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="CMIDINoteEdit" name="LowKeyFullEdit" native="true"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="CMIDINoteEdit" name="HighKeyFullEdit" native="true"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="CMIDINoteEdit" name="LowKeyXEdit" native="true"/>
+       </item>
+       <item row="2" column="4">
+        <widget class="CMIDINoteEdit" name="HighKeyXEdit" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CWaveEditWidget</class>
+   <extends>QWidget</extends>
+   <header>cwaveeditwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CKeyRangesControl</class>
+   <extends>QWidget</extends>
+   <header>ckeyrangescontrol.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CMIDINoteEdit</class>
+   <extends>QWidget</extends>
+   <header>cmidinoteedit.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

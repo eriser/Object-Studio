@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CVSTHostForm</class>
+ <widget class="QDialog" name="CVSTHostForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>546</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListWidget" name="PresetList">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>141</width>
+     <height>401</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="ParameterList">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>121</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="StatusEdit">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>391</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>62</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>120</y>
+     <width>62</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QDial" name="dial">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>50</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>10000</number>
+   </property>
+   <property name="singleStep">
+    <number>100</number>
+   </property>
+   <property name="pageStep">
+    <number>1000</number>
+   </property>
+   <property name="notchesVisible">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="CMacWindow" name="View" native="true">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>141</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CMacWindow</class>
+   <extends>QWidget</extends>
+   <header>cmacwindow.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

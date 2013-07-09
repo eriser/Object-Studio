@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CDesktopContainer</class>
+ <widget class="QWidget" name="CDesktopContainer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ParametersComponent, #ParametersComponent QScrollArea{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(230, 230, 230, 255), stop:0.8 rgba(200, 200, 200, 255));}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="CParametersComponent" name="ParametersComponent" native="true"/>
+   </item>
+   <item>
+    <widget class="CDesktopComponent" name="DesktopComponent"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDesktopComponent</class>
+   <extends>QGraphicsView</extends>
+   <header>cdesktopcomponent.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CParametersComponent</class>
+   <extends>QWidget</extends>
+   <header>cparameterscomponent.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

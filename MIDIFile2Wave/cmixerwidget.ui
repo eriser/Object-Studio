@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMixerWidget</class>
+ <widget class="QWidget" name="CMixerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QSlider:vertical{background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(60, 60, 60, 255), stop:0.8 rgba(0, 0, 0, 255));}
+
+QSlider::handle:vertical {
+	/*width: 30px;
+    height: 10px;*/
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #DFDFDF, stop: 0.5 #7E7E7E, stop:1 #BCBCBC);
+/*
+    border: 1px solid #666666;
+    border-radius: 2px;*/
+}</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

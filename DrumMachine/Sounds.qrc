@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>cym01.wav</file>
+        <file>hat01.wav</file>
+        <file>hat19.wav</file>
+        <file>kick01.wav</file>
+        <file>kick02.wav</file>
+        <file>snr01.wav</file>
+        <file>tom01.wav</file>
+        <file>tom02.wav</file>
+    </qresource>
+</RCC>
